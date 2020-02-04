@@ -1,13 +1,9 @@
 body {
   font-family: 'Playfair Display', serif;
   color: #626262;
-  
-  margin: 0 auto 50px;
-  padding-top: 78px;
-  width: 1200px;
 }
 
-header, main{
+header, main {
   font-size: 0px;
   
   margin: auto;
@@ -15,13 +11,19 @@ header, main{
   background-color: #ffffff;
 }
 
+header {
+  padding-top: 96px;
+}
+
 nav, article {
   font-size: 14px;
   line-height: 24px;
 }
 
-nav {
-  margin-left: 100px;
+nav ul {
+  padding: 0;
+  margin: 14px auto;
+  width: 700px;
 }
 
 nav li {
@@ -36,7 +38,7 @@ nav a {
   color: #626262;
   
   padding: 10px 40px;
-  width: 100px;
+  width: 90px;
   
   display: inline-block;
 }
@@ -78,6 +80,7 @@ article .description {
   }
 
 button {
+  font-family: inherit;
   font-size: 20px;
   color: #626262;
 
