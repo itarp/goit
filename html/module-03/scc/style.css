@@ -9,6 +9,7 @@ body {
 .pageWrapper {
   margin: auto;
   padding-top: 123px;
+  padding-bottom: 65px;
   width: 900px;
 }
 
