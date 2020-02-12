@@ -1,18 +1,19 @@
 body {
   font-family: 'Playfair Display', serif;
   color: #626262;
-}
 
-header, main {
-  font-size: 0px;
-  
-  margin: auto;
-  width: 962px;
+  margin: 0;
   background-color: #ffffff;
 }
 
+.pageWrapper {
+  margin: auto;
+  padding-top: 123px;
+  width: 900px;
+}
+
 header {
-  padding-top: 96px;
+  margin-bottom: 91px;
 }
 
 nav, article {
@@ -21,44 +22,59 @@ nav, article {
 }
 
 nav ul {
-  padding: 0;
-  margin: 14px auto;
+  margin: auto;
+  padding: 5px;
+  padding-left: 101px;
   width: 700px;
+
 }
 
 nav li {
-  text-transform: uppercase;
-  
+  width: 100px;
+
   display: inline-block;
+}
+
+nav li:not(:last-of-type) {
+  margin-right: 67px;
 }
 
 nav a {
   text-align: center;
+  text-transform: uppercase;
   text-decoration: none;
   color: #626262;
   
-  padding: 10px 40px;
-  width: 90px;
-  
-  display: inline-block;
+  display: block;
 }
 
 nav a:hover {
   color: #03a9f4;
 }
 
-main {
-  padding-top: 0px;
+main ul {
+  font-size: 0px;
+
+  padding: 0;
 }
 
-article {
-  margin: 0 30px;
-  padding-top: 73px;
-  margin-bottom: 50px;
-  width: 421px;
-  
+main li {
   vertical-align: top;
+
+  margin-bottom: 135px;
+  width: 420px;
+  height: 480px;
+  
   display: inline-block;
+  overflow: hidden;
+}
+
+main li:not(:nth-of-type(2n)) {
+  margin-right: 60px;
+}
+
+main li:nth-last-of-type(-n + 2) {
+  margin-bottom: 48px;
 }
 
 article .title {
